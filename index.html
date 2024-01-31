@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>Scripts de Roblox</title>
+</head>
+<body>
+    <center>
+    <h1>Scripts de Roblox Clase C6 Easter Camp</h1>
+    <hr>
+    <h3>Script para perder salud</h3>
+    <textarea cols='80' rows='7' id="codigo">
+        --// 1.Coloca el script en cada parte del modelo
+             2.Cambia el valor de la variable y ejecuta para ver el resultado // 
+
+        script.Parent.Touched:Connect(function(hit)
+            hit.Parent.Humanoid.Health=hit.Parent.Humanoid.Health - 5 
+            script.Parent:Destroy()
+        end)
+
+        </textarea><br>
+        <button type="button" id="copyClip" data-clipboard-target="#codigo">Copiar</button>
+        <script src="clipboard.min.js"></script>
+
+    <br><br>
+    <hr>
+    <h3>Script de velocidad</h3>
+    <textarea cols='80' rows='7' id="codigo2">
+        --// 1.Coloca este script en cada parte del modelo de la poción.
+             2.Cambia el valor de la variable y ejecuta para ver el resultado// 
+
+        script.Parent.Touched:Connect(function(speed)
+	        speed.Parent.Humanoid.WalkSpeed=50
+	        script.Parent:Destroy()
+	    end)
+
+    </textarea><br>
+    <button type="button" id="bt1" class="bt1" data-clipboard-target="#codigo2">Copiar</button>
+    <script>
+    var clipboard2 = new Clipboard('.bt1');
+    </script>
+    </center>
+    
+</body>
+</html>
